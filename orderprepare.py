@@ -165,8 +165,8 @@ def main():
     #displaying which menu items have milk
     source = create(buy_teas)
 
-    source.subscribe(on_next=lambda value: print("Following Drink Contains Diary Products: {0}".format(value)),
-                on_completed=lambda: print("Warnings Listed Above"),
+    source.subscribe(on_next=lambda value: print("Specialty Items - Following Drink Contains Diary Products: {0}".format(value)),
+                on_completed=lambda: print(" "),
                 on_error=lambda e: print(e))
     
     #initializing controller object
